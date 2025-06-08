@@ -30,7 +30,7 @@ plt.rcParams['figure.titlesize'] = 16
 url = 'https://fbref.com/en/comps/Big5/Big-5-European-Leagues-Stats'
 df = pd.read_html(url, attrs={'id': 'big5_table'})[0]
 
-# Calculate performance difference
+# Calculate performance difference top 10
 df['difference'] = df['GF'] - df['xG']
 overperformers = df.nlargest(10, 'difference')
 underperformers = df.nsmallest(10, 'difference')
@@ -104,5 +104,5 @@ ax.set_ylim(df['GF'].min() - 5, df['GF'].max() + 5)
 
 plt.tight_layout()
 plt.show()
-plt.savefig('football_xg_analysis.png', bbox_inches='tight', facecolor='white')
-print("Plot saved as 'football_xg_analysis.png'")
+plt.savefig('Top Leagues Scatter Plot analysis.png', bbox_inches='tight', facecolor='white')
+print("Plot saved as 'Top Leagues Scatter Plot analysis.png'")
