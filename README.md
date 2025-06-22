@@ -12,3 +12,6 @@ Pressure events, percentage point difference\nfrom Serie A 2021/22 after Match D
 Parsing raw StatsBomb data and storing it in a Pandas DataFrame
 
 ## Template for Football Pitch types Using mplsoccer
+
+## FBref Player Analytics Scraper
+This script transforms a player's FBref URL into 9 separate CSV files containing different Stats categories.
