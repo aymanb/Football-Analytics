@@ -103,6 +103,6 @@ ax.set_xlim(df['xG'].min() - 5, df['xG'].max() + 5)
 ax.set_ylim(df['GF'].min() - 5, df['GF'].max() + 5)
 
 plt.tight_layout()
-plt.show()
 plt.savefig('Top Leagues Scatter Plot analysis.png', bbox_inches='tight', facecolor='white')
 print("Plot saved as 'Top Leagues Scatter Plot analysis.png'")
+plt.show()
